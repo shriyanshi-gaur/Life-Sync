@@ -54,14 +54,21 @@ This project emphasizes code quality and reliability. It features an automated t
 * **Mocking:** Utilizes `vi.mock` to simulate API calls, isolating frontend logic from backend dependencies.
 
 ### Running Tests
+
+*Screenshot of passing tests:*
+
+
+<img src="./screenshots/test1.jpeg" width="600" alt="Vitest Results" />
+<img src="./screenshots/test2.jpeg" width="600" alt="Vitest Results" />
+
 ```bash
 npm run test
 
 *Screenshot of passing tests:*
 
 
-<img src="/screenshots/test1.jpeg" width="600" alt="Vitest Results" />
-<img src="/screenshots/test2.jpeg" width="600" alt="Vitest Results" />
+<img src="./screenshots/test1.jpeg" width="600" alt="Vitest Results" />
+<img src="./screenshots/test2.jpeg" width="600" alt="Vitest Results" />
 
 ---
 
@@ -142,7 +149,5 @@ This project is open-source and available under the [MIT License](https://www.go
 
 Shriyanshi Gaur
 
-* LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-* GitHub: [Your GitHub Profile](https://github.com/yourusername)
 
 ```
