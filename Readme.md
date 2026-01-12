@@ -2,7 +2,7 @@
 
 **LifeSync** is a comprehensive personal wellness and productivity dashboard designed to help users organize tasks, build consistent habits, and track their mental well-being. Built as a scalable Single Page Application (SPA) using the modern Vue 3 ecosystem.
 
-![LifeSync Banner](https://via.placeholder.com/1200x400.png?text=LifeSync+Dashboard)
+
 ## 🚀 Key Features
 
 * **📝 Task Management:** Create, prioritize, and manage tasks with optimistic UI updates for a snappy experience.
@@ -11,7 +11,7 @@
 * **📊 Analytics Dashboard:** Real-time data visualization using Charts and Knobs to monitor completion rates and productivity distribution.
 * **🧠 Resource Hub:** Curated mental health and developer resources fetched dynamically from external APIs.
 * **🔐 Secure Authentication:** JWT-based login/register system with protected routes and persistent sessions.
-* **🎨 Modern UI/UX:** Responsive design featuring **Dark/Light mode**, Glassmorphism effects, and interactive **PrimeVue** components.
+* **🎨 Modern UI/UX:** Responsive design featuring **Dark/Light mode**, and interactive **PrimeVue** components.
 
 ---
 
@@ -63,12 +63,6 @@ This project emphasizes code quality and reliability. It features an automated t
 
 ```bash
 npm run test
-
-*Screenshot of passing tests:*
-
-
-<img src="./screenshots/test1.jpeg" width="600" alt="Vitest Results" />
-<img src="./screenshots/test2.jpeg" width="600" alt="Vitest Results" />
 
 ---
 
