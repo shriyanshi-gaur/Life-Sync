@@ -1,6 +1,3 @@
-
-
-```markdown
 # 🌿 LifeSync
 
 **LifeSync** is a comprehensive personal wellness and productivity dashboard designed to help users organize tasks, build consistent habits, and track their mental well-being. Built as a scalable Single Page Application (SPA) using the modern Vue 3 ecosystem.
@@ -40,11 +37,11 @@
 
 | **Dashboard (Dark Mode)** | **Analytics & Charts** |
 |:---:|:---:|
-| <img src="/screenshots/dashboard-dark.jpeg" width="400" alt="Dashboard" /> | <img src="./screenshots/analytics.jpeg" width="400" alt="Analytics" /> |
+| <img src="./screenshots/dashboard-dark.jpeg" width="400" alt="Dashboard" /> | <img src="./screenshots/analytics.jpeg" width="400" alt="Analytics" /> |
 
 | **Habit Tracker** | **Mood Journal** |
 |:---:|:---:|
-| <img src="/screenshots/.jpeg" width="400" alt="Habits" /> | <img src="./screenshots/journal.jpeg" width="400" alt="Journal" /> |
+| <img src="/screenshots/habits.jpeg" width="400" alt="Habits" /> | <img src="./screenshots/journal.jpeg" width="400" alt="Journal" /> |
 
 ---
 
@@ -60,9 +57,9 @@ This project emphasizes code quality and reliability. It features an automated t
 ```bash
 npm run test
 
-```
-
 *Screenshot of passing tests:*
+
+
 <img src="/screenshots/test1.jpeg" width="600" alt="Vitest Results" />
 <img src="/screenshots/test2.jpeg" width="600" alt="Vitest Results" />
 
@@ -143,7 +140,7 @@ This project is open-source and available under the [MIT License](https://www.go
 
 ### 👤 Author
 
-**Your Name**
+Shriyanshi Gaur
 
 * LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
 * GitHub: [Your GitHub Profile](https://github.com/yourusername)
