@@ -1,36 +1,72 @@
+// import { ref, onMounted } from 'vue';
+
+// export function useDark() {
+//   // State to track if dark mode is on
+//   const isDark = ref(false);
+
+//   // Toggle function
+//   const toggleDark = () => {
+//     isDark.value = !isDark.value;
+//     updateDOM();
+//   };
+
+//   // Update the HTML tag class and LocalStorage
+//   const updateDOM = () => {
+//     const html = document.documentElement;
+//     if (isDark.value) {
+//       html.classList.add('dark');
+//       localStorage.setItem('theme', 'dark');
+//     } else {
+//       html.classList.remove('dark');
+//       localStorage.setItem('theme', 'light');
+//     }
+//   };
+
+//   // Check preferences on load
+//   onMounted(() => {
+//     const savedTheme = localStorage.getItem('theme');
+//     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+//     if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+//       isDark.value = true;
+//       updateDOM();
+//     }
+//   });
+
+//   return { isDark, toggleDark };
+// }
+
 import { ref, onMounted } from 'vue';
 
 export function useDark() {
-  // State to track if dark mode is on
   const isDark = ref(false);
 
-  // Toggle function
   const toggleDark = () => {
     isDark.value = !isDark.value;
-    updateDOM();
+    updateHtmlClass();
   };
 
-  // Update the HTML tag class and LocalStorage
-  const updateDOM = () => {
-    const html = document.documentElement;
+  const updateHtmlClass = () => {
     if (isDark.value) {
-      html.classList.add('dark');
+      document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     } else {
-      html.classList.remove('dark');
+      document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
     }
   };
 
-  // Check preferences on load
   onMounted(() => {
     const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+    // Set initial state based on saved preference or system setting
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
       isDark.value = true;
-      updateDOM();
+    } else {
+      isDark.value = false;
     }
+    updateHtmlClass();
   });
 
   return { isDark, toggleDark };
